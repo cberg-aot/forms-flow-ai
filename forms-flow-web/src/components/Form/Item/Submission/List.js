@@ -121,7 +121,7 @@ const List = React.memo((props) => {
             {" "}
             <i className="fa fa-wpforms" aria-hidden="true" />
             <span className="forms-text">
-              <Translation>{(t) => t("Forms")}</Translation> /
+              <Translation>{(t) => t("Permits")}</Translation> /
             </span>
             {form.title}
           </span>

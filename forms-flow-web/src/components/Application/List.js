@@ -104,14 +104,14 @@ export const ApplicationList = React.memo(() => {
       <div className="div-no-application">
         <label className="lbl-no-application">
           {" "}
-          <Translation>{(t) => t("No applications found")}</Translation>{" "}
+          <Translation>{(t) => t("No permits found")}</Translation>{" "}
         </label>
         <br />
         <label className="lbl-no-application-desc">
           {" "}
           <Translation>
             {(t) =>
-              t("Please change the selected filters to view applications")
+              t("Please change the selected filters to view permits")
             }
           </Translation>
         </label>
@@ -157,7 +157,7 @@ export const ApplicationList = React.memo(() => {
   const headerList = () => {
     return [
       {
-        name: "Applications",
+        name: "Permits",
         count: applicationCount,
         onClick: () => dispatch(push(`${redirectUrl}application`)),
         icon: "list",
@@ -231,7 +231,7 @@ export const ApplicationList = React.memo(() => {
             ) : iserror ? (
               <Alert variant={"danger"}>{error}</Alert>
             ) : (
-              <Nodata text={t("No Applications Found")} />
+              <Nodata text={t("No Permits Found")} />
             )}
           </div>
         </div>

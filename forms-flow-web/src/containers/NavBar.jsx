@@ -98,7 +98,7 @@ const NavBar = React.memo(() => {
       <Navbar
         expand="lg"
         fixed="top"
-        style={{backgroundColor: '#003366', borderBottom: '2px solid #fcba19'}}
+        style={{backgroundColor: 'green', borderBottom: '2px solid #fcba19'}}
       >
         <Container fluid >
           <Navbar.Brand className="d-flex" >
@@ -130,7 +130,7 @@ const NavBar = React.memo(() => {
                   }`}
                 >
                   <i className="fa fa-wpforms fa-fw fa-lg mr-2" />
-                  {t("Forms")}
+                  {t("Permits")}
                 </Nav.Link>
                 {getUserRolePermission(userRoles, STAFF_DESIGNER) ? (
                   <Nav.Link
@@ -184,7 +184,7 @@ const NavBar = React.memo(() => {
                     >
                       {" "}
                       <i className="fa fa-list-alt fa-fw fa-lg mr-2" />
-                      {t("Applications")}
+                      {t("Submitted Permits")}
                     </Nav.Link>
                   ) : null
                 ) : null}

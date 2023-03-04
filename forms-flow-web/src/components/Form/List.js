@@ -525,7 +525,7 @@ const List = React.memo((props) => {
                 <h3 className="task-head">
                   {" "}
                   <span className="forms-text" style={{ marginLeft: "1px" }}>
-                    {t("Forms")}
+                    {t("Permits")}
                   </span>
                 </h3>
               </div>
